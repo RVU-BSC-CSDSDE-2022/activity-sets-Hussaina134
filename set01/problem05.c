@@ -22,10 +22,11 @@ int input(){
 
 int compare(int a, int b, int c)
 {
-	if (  a>=b && a>=c) 
+	if ((a > b) && (a > c)) 
 		return a;
-	if ( b>=c)
+	if ((b > c)&&(b > a))
 		return b;
+  if ((c > a) && (c > b))
 	return c;
 }
 
