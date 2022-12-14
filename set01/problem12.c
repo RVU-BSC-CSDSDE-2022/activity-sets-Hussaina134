@@ -20,7 +20,7 @@ int main()
   Complex result=add_n_complex(n,c);
   output(n,c,result);
   return 0;
-}
+} 
 
 int get_n()
 {
