@@ -29,7 +29,7 @@ Triangle input_triangle()
 {
   Triangle t;
   printf("Enter base,altitude:\n");
-  scanf("%d%d",&t.base,&t.altitude);
+  scanf("%f%f",&t.base,&t.altitude);
   return t;
 }
 void input_n_triangles(int n, Triangle t[n])
