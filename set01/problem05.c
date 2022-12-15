@@ -61,13 +61,15 @@ int input()
 }
 int compare(int a, int b, int c)
 {
-  if (a>b)
-    a = b;
-  return b;
-  if (a>c)
-    a = c;
-  return c;
-}
+  if (a>b && a>c)
+  return a;
+  //return b;
+  if (b>c)
+    //a = c;
+    return b;
+  else
+    return c;
+  }
 void output(int a, int b, int c, int largest)
 {
   printf("The largest number is %d",largest);
