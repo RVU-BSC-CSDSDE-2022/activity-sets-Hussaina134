@@ -22,7 +22,7 @@ scanf("%d",&n);
 int is_composite(int n)
 {
   int count = 0;
-for (int i = 1; i < n;i++)
+for (int i = 1; i <= n;i++)
   if (n % i == 0)
   {
     count = count + 1;
