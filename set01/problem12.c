@@ -25,7 +25,7 @@ int main()
 int get_n()
 {
   int n;
-  printf("Enter the number of the array.\n");
+  printf("Enter the size of the array.\n");
   scanf("%d",&n);
   return n;
 }
@@ -42,7 +42,7 @@ void input_n_complex(int n, Complex c[n])
 {
   for (int i=0 ; i<n ; i++)
     {
-      c[i]=input_complex();
+      c[i] = input_complex();
     }
 }
 
@@ -58,7 +58,7 @@ Complex add_n_complex(int n, Complex c[n])
   Complex result={0,0};
   for (int i=0 ; i<n ; i++)
     {
-      result=add(result,c[i]);
+      result = add(result,c[i]);
     }
   return result;
 }

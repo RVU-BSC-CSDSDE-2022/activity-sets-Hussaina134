@@ -1,5 +1,5 @@
 //Write a C program to compare two strings, character by character.
-//> For example, `Hello` should be equal to `Hello`, but not equal to `hello`.
+//> For example, `Hello` should be equal to `Hello`, but not equal to hello`.`
 //> `Hello` will be lesser than `Hellw` (alphabetical order).
 
 #include <stdio.h>
@@ -8,14 +8,7 @@ void input_two_strings(char *string1, char *string2);
 int stringcompare(char *string1, char *string2);
 void output(char *string1, char *string2, int result);
 
-int main()
-{
-  char string1[10],string2[10];
-  int result=0;
-  input_two_strings(string1,string2);
-  result=stringcompare(string1, string2);
- output(string1, string2, result);
-}
+
 void input_two_strings(char *string1, char *string2)
 {
  printf("Enter the first string :\n");
@@ -46,3 +39,11 @@ void output(char *string1, char *string2, int result)
      printf("%s is greater\n", string2);
   
 }
+int main()
+{
+  char string1[10],string2[10];
+  int result=0;
+  input_two_strings(string1,string2);
+  result=stringcompare(string1, string2);
+ output(string1, string2, result);
+  }
